@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Log In</title>
+    <link rel="stylesheet" href="loginAdmin.css">
+</head>
+
+<body>
+  <div class="login-container">
+    <h2>Welcome Back Admin</h2>
+    <form class="login-form">
+        <small>E-mail</small><br>
+      <div class="input-group">
+        <input type="email" id="email" placeholder="Masukan Email Anda" required>
+      </div>
+      <br><br>
+        <small>Password</small><br>
+      <div class="input-group">
+        <input type="password" id="password" placeholder="Masukan Password Anda" required>
+      </div><br><br>
+      <div id="btn">
+        <button type="submit" id="myButton">Login</button><br><br><br>
+        <a href="/admin/index.html" id="myLink" target="_blank" style="display:none;"></a>
+      </div>
+      <br>
+      <!-- <p class="signup-link">Don't have an account? <a href="/regist - informasi group/regist - informasi group/index.html">Create one</a></p> -->
+    </form>
+  </div>
+
+  <script>
+    var button = document.getElementById('myButton');
+    var link = document.getElementById('myLink');
+
+    // Add click event listener to the button
+    button.addEventListener('click', function() {
+        // Open the link in the same tab when the button is clicked
+        window.location.href = link.href;
+    });
+    
+  </script>
+</body>
+</html>

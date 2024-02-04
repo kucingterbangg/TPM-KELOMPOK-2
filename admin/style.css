@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    background-color: rgb(30, 30, 30);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.nama-admin {
+    font-weight: bold;
+}
+
+.search-button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown {
+    margin-top: 15px;
+    text-align: left;
+    color: #7f7f7f;
+}
+
+.arrow {
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dropdownhover {
+    cursor: default;
+    transition: font-weight 0.3s ease, cursor 0.3s ease;
+}
+
+.dropdown:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select {
+    padding: 8px;
+    border-radius: 5px;
+}

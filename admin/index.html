@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="profile-picture">
+                <img src="ellipse.png" alt="Profile Picture" height="200px" width="200px">
+            </div>
+            <p class="nama-admin">Nama Admin</p>
+            <p class="admin-hackathon">Admin Hackathon</p>
+            <button class="search-button">Search</button>
+
+            <div class="dropdown-container">
+                <div class="dropdown" onclick="redirectToPage('registered-teams')">
+                    <label for="registered-teams">Registered Teams</label>
+                </div>
+                <div class="arrow" onclick="redirectToPage('registered-teams')">
+                    <img src="arrow.png" width="12px" height="20px">
+                </div>
+            </div>
+
+            <div class="dropdown-container">
+                <div class="dropdown" onclick="redirectToPage('cv-folder')">
+                    <label for="cv-folder">CV Folder</label>
+                </div>
+                <div class="arrow-top" onclick="redirectToPage('cv-folder')">
+                    <img src="arrow.png" width="12px" height="20px">
+                </div>
+            </div>
+
+            <div class="dropdown-container">
+                <div class="dropdown" onclick="redirectToPage('binusian-id')">
+                    <label for="binusian-id">Binusian ID Flazz Card</label>
+                </div>
+                <div class="arrow" onclick="redirectToPage('binusian-id')">
+                    <img src="arrow.png" width="12px" height="20px">
+                </div>
+            </div>
+
+            <div class="dropdown-container">
+                <div class="dropdown" onclick="redirectToPage('non-binusian-id')">
+                    <label for="non-binusian-id">Non-Binusian ID</label>
+                </div>
+                <div class="arrow" onclick="redirectToPage('non-binusian-id')">
+                    <img src="arrow.png" width="12px" height="20px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redirectToPage(selectedOption) {
+            var pageURLs = {
+                'registered-teams': 'registered_teams_page.html',
+                'cv-folder': 'cv_folder_page.html',
+                'binusian-id': 'binusian_id_page.html',
+                'non-binusian-id': 'non_binusian_id_page.html'
+            };
+
+            var selectedPage = pageURLs[selectedOption];
+            if (selectedPage) {
+                window.location.href = selectedPage;
+            }
+        }
+    </script>
+</body>
+</html>

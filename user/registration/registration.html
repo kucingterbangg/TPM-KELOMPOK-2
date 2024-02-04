@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+  <div>
+    
+  </div>
+  <div class="login-container">
+      <h2 class="center-text">Informasi Grup</h2><br>
+    <!-- <div class="image-container">
+      <img id="bullet" src="bulet.png" alt="bulet.png">
+    </div> -->
+    <form class="login-form">
+        <small>Nama Group</small>
+      <div class="input-group">
+        <input class="square" type="text" id="email" placeholder="Masukan Email Anda" required>
+      </div>
+      <br>
+        <small>Password</small>
+      <div class="input-group">
+        <input class="square" type="text" id="password" placeholder="Masukan Password Anda" required>
+      </div>
+      <br>
+      <small>Konfirmasi Password</small>
+      <div class="input-group">
+        <input class="square" type="text" id="password" placeholder="Masukan Password Anda Kembali" required>
+      </div><br>
+
+      <div id="radioo">
+        <label>
+          <input class="r" type="radio" name="groupSelection" value="groupOne">
+          Binusian
+        </label>
+        <label>
+            <input class="r" type="radio" name="groupSelection" value="groupTwo">
+            Non-Binusian
+        </label>
+      </div><br>
+
+      <div class="login-container">
+        <h2 class="center-text">Informasi Leader</h2><br>
+      <!-- <div class="image-container">
+        <img id="bulet" src="../../regist - informasi leader/regist - informasi leader/bulet.png" alt="bulet.png" width="91.5" height="46.5">
+      </div> -->
+      <form class="login-form">
+          <small>E-mail</small>
+        <div class="input-group">
+          <input class="square" type="email" id="email" placeholder="Masukan Email Anda" required>
+        </div>
+        <br>
+          <small>Whatsapp Number</small>
+        <div class="input-group">
+          <input class="square" type="number" id="number" placeholder="Masukan Nomor Whatsapp Anda" required>
+        </div>
+        <br>
+        <small>Line ID</small>
+        <div class="input-group">
+          <input class="square" type="text" id="text" placeholder="Masukan Line ID Anda" required>
+        </div>
+        <br>
+        <small>Github / Gitlab ID</small>
+        <div class="input-group">
+          <input class="square" type="text" id="text" placeholder="Masukan Github ID Anda" required>
+        </div>
+        <br>
+        <small>Tempat Lahir</small>
+        <div class="input-group">
+          <input class="square" type="text" id="text" placeholder="Masukan Tempat Lahir Anda" required>
+        </div>
+        <br>
+        <small>Tanggal Lahir</small>
+        <div class="input-group">
+          <input class="date" type="date" id="text" placeholder="Tanggal Lahir" required>
+        </div>
+        <br>
+        <small>Upload CV</small>
+        <div class="input-group">
+          <input class="up" type="file" id="text" placeholder="Upload CV Anda" required>
+        </div>
+        <br>
+        <small>Upload Flazz Card untuk Binusian</small>
+        <div class="input-group">
+          <input class="up" type="file" id="text" placeholder="Upload Flazz Card Binusian Anda">
+        </div>
+        <br>
+
+      <div class="btn">
+        <button id="lanjut" type="submit">Konfirmasi</button>
+        <a href="/home/home.html" id="myLink" target="_blank" style="display:none;"></a>
+      </div>
+      
+    </form>
+  </div>
+
+  <script>
+    var button = document.getElementById('lanjut');
+    var link = document.getElementById('myLink');
+
+    // Add click event listener to the button
+    button.addEventListener('click', function() {
+        // Open the link in the same tab when the button is clicked
+        window.location.href = link.href;
+    });
+  </script>
+</body>
+</html>
